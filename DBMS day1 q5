@@ -1,0 +1,32 @@
+mysql> use faculty;
+Database changed
+mysql> desc faculty;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| facNo    | int      | YES  |     | NULL    |       |
+| name     | char(20) | YES  |     | NULL    |       |
+| gender   | char(10) | YES  |     | NULL    |       |
+| DOB      | int      | YES  |     | NULL    |       |
+| mobileno | int      | YES  |     | NULL    |       |
+| DOJ      | int      | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> alter table  faculty add dept char(10);
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc faculty;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| facNo    | int      | YES  |     | NULL    |       |
+| name     | char(20) | YES  |     | NULL    |       |
+| gender   | char(10) | YES  |     | NULL    |       |
+| DOB      | int      | YES  |     | NULL    |       |
+| mobileno | int      | YES  |     | NULL    |       |
+| DOJ      | int      | YES  |     | NULL    |       |
+| dept     | char(10) | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
