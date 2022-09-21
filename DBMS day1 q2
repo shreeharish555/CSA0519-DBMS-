@@ -1,0 +1,14 @@
+mysql> use faculty
+Database changed
+mysql> desc faculty;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| facNo    | int      | YES  |     | NULL    |       |
+| name     | char(20) | YES  |     | NULL    |       |
+| gender   | char(10) | YES  |     | NULL    |       |
+| DOB      | int      | YES  |     | NULL    |       |
+| mobileno | int      | YES  |     | NULL    |       |
+| DOJ      | int      | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
